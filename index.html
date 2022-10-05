@@ -8,7 +8,24 @@
 </head>
 <body>
     <script>
-        
+        let numbersOfFilms = prompt("Сколько фильмов вы уже смотрели?");
+
+        let personalMovieDB = {
+            count: numbersOfFilms,
+            movies:{},
+            actors:{},
+            genres:[],
+            privat: false
+        }
+
+        let a= prompt("Последний просмотреный фильм"),
+            b =prompt('Оцените его'),
+            c = prompt("Последний просмотреный фильм"),
+            d =prompt('Оцените его');
+
+        personalMovieDB.movies[a]=b;
+        personalMovieDB.movies[c]=d;
+        console.log(personalMovieDB);
     </script>
 </body>
 </html>
